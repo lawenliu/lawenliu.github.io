@@ -78,7 +78,7 @@ a:hover {
 }
 
 .website {
-    color: #dbeafe;
+    color: #1d4ed8;
 }
 
 .profile-meta {
@@ -96,16 +96,19 @@ a:hover {
 
 .profile-links a {
     display: inline-block;
-    margin-right: 0.75rem;
-    padding: 0.3rem 0.75rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.35rem;
+    padding: 0.28rem 0.75rem;
     border-radius: 999px;
-    border: 1px solid rgba(249, 250, 251, 0.4);
+    border: 1px solid #e5e7eb;
     font-size: 0.85rem;
-    color: #EFF6FF;
+    color: #1f2937;
+    background: #f9fafb;
 }
 
 .profile-links a:hover {
-    background: rgba(15, 23, 42, 0.12);
+    background: #eff6ff;
+    border-color: #bfdbfe;
 }
 
 .site-main {
@@ -121,39 +124,52 @@ a:hover {
 }
 
 .layout {
-    display: flex;
-    align-items: flex-start;
-    gap: 2rem;
+    display: block;
 }
 
 .sidebar {
-    flex: 0 0 260px;
+    width: 100%;
+    margin-bottom: 1.75rem;
 }
 
 .sidebar-card {
-    background: #f9fafb;
+    background: #f3f4f6;
     border-radius: 0.75rem;
-    border: 1px solid #e5e7eb;
+    border: 1px solid #d1d5db;
     padding: 1.25rem 1.1rem 1.5rem;
 }
 
-.avatar {
-    width: 72px;
-    height: 72px;
-    border-radius: 999px;
-    background: linear-gradient(135deg, #1d4ed8, #3b82f6);
-    color: #eff6ff;
+.sidebar-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1.2rem;
+    align-items: flex-start;
+}
+
+.sidebar-left {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    font-size: 1.6rem;
-    margin-bottom: 0.75rem;
+}
+
+.sidebar-right {
+    min-width: 0;
+}
+
+.avatar {
+    display: block;
+    width: 110px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.18);
+    margin-bottom: 0;
 }
 
 .sidebar-name {
     font-weight: 600;
     font-size: 1.05rem;
+    margin-top: 0.6rem;
 }
 
 .sidebar-role {
@@ -205,6 +221,11 @@ ul {
     padding-left: 1.25rem;
 }
 
+#publications ul {
+    list-style: none;
+    padding-left: 0;
+}
+
 /* 发表论文折叠块 */
 details {
     border-radius: 0.5rem;
@@ -253,6 +274,30 @@ details[open] summary::before {
     border-radius: 999px;
     font-size: 0.8rem;
 }
+.pub-item {
+    margin-bottom: 0.9rem;
+    padding-left: 0.6rem;
+    border-left: 3px solid #e5e7eb;
+}
+
+.pub-title {
+    font-weight: 600;
+}
+
+.pub-authors,
+.pub-venue {
+    font-size: 0.9rem;
+    color: #4b5563;
+}
+
+.pub-links {
+    margin-top: 0.15rem;
+    font-size: 0.85em;
+}
+
+.pub-links a {
+    margin-right: 0.35rem;
+}
 
 .site-footer {
     text-align: center;
@@ -273,14 +318,5 @@ details[open] summary::before {
 
     .site-main .container {
         padding: 1.5rem 1.25rem 1.8rem;
-    }
-
-    .layout {
-        flex-direction: column;
-    }
-
-    .sidebar {
-        flex: none;
-        width: 100%;
     }
 }
