@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Xiaoli Lian Scholership</title>
+    <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="profile-main">
+                <div class="profile-text">
+                    <h1 id="name">Lianxiao's Academic Homepage</h1>
+                    <p id="bio">这里写一两句话的个人简介，如研究领域、当前单位或职称。</p>
+                    <div class="profile-meta">
+                        <span id="email">邮箱：your.email@example.com</span>
+                        <span id="website">个人网站：<a href="#">https://lawenliu.github.io</a></span>
+                    </div>
+                    <div class="profile-links">
+                        <a href="https://github.com/你的GitHub用户名" target="_blank" rel="noopener">GitHub</a>
+                        <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a>
+                        <a href="https://orcid.org/" target="_blank" rel="noopener">ORCID</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="site-main">
+        <div class="container">
+            <section>
+                <h2>教育背景</h2>
+                <ul>
+                    <li>学校名称，学位，起止时间</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>研究方向 / 兴趣</h2>
+                <ul>
+                    <li>研究方向 1</li>
+                    <li>研究方向 2</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>代表性项目</h2>
+                <ul>
+                    <li>
+                        <a href="https://github.com/你的GitHub用户名/项目1" target="_blank" rel="noopener">项目名称 1</a>
+                        ：简要描述
+                    </li>
+                    <li>
+                        <a href="https://github.com/你的GitHub用户名/项目2" target="_blank" rel="noopener">项目名称 2</a>
+                        ：简要描述
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>发表论文</h2>
+
+                <details open>
+                    <summary>2025</summary>
+                    <ul>
+                        <li>论文标题 A，作者，期刊 / 会议，2025</li>
+                        <li>论文标题 B，作者，期刊 / 会议，2025</li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>2024</summary>
+                    <ul>
+                        <li>论文标题 C，作者，期刊 / 会议，2024</li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>更早</summary>
+                    <ul>
+                        <li>论文标题 D，作者，期刊 / 会议，年份</li>
+                    </ul>
+                </details>
+            </section>
+
+            <section>
+                <h2>技能标签</h2>
+                <ul class="tags">
+                    <li>技能 1</li>
+                    <li>技能 2</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <small>© <span id="year"></span> 你的姓名. Powered by GitHub Pages.</small>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, -system-ui, "Helvetica Neue", Arial, sans-serif;
+  color: #111827;
+  background: #f9fafb;
+  line-height: 1.6;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.site-header {
+  background: linear-gradient(135deg, #1d4ed8, #3b82f6);
+  color: #f9fafb;
+  padding: 3rem 0 2.5rem;
+}
+
+.site-header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 2.1rem;
+}
+
+.site-header p {
+  margin: 0.25rem 0 1rem;
+  font-size: 0.98rem;
+}
+
+.profile-meta {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.profile-meta span + span {
+  margin-left: 1rem;
+}
+
+.profile-links {
+  margin-top: 1rem;
+}
+
+.profile-links a {
+  display: inline-block;
+  margin-right: 0.75rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid rgba(249, 250, 251, 0.4);
+  font-size: 0.85rem;
+  color: #EFF6FF;
+}
+
+.profile-links a:hover {
+  background: rgba(15, 23, 42, 0.12);
+}
+
+.site-main {
+  margin-top: -1.5rem;
+  padding: 0 0 3rem;
+}
+
+.site-main .container {
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+  padding: 2rem 1.8rem 2.2rem;
+}
+
+section + section {
+  margin-top: 1.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.2rem;
+  color: #111827;
+}
+
+ul {
+  margin: 0.25rem 0 0;
+  padding-left: 1.25rem;
+}
+
+/* 发表论文折叠块 */
+details {
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+  padding: 0.6rem 0.9rem 0.7rem;
+  margin-top: 0.5rem;
+  background: #f9fafb;
+}
+
+details[open] {
+  background: #f3f4f6;
+}
+
+details summary {
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary::before {
+  content: "▸";
+  display: inline-block;
+  margin-right: 0.4rem;
+  transition: transform 0.15s ease-out;
+}
+
+details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.tags {
+  list-style: none;
+  padding-left: 0;
+}
+
+.tags li {
+  display: inline-block;
+  margin: 0 0.5rem 0.5rem 0;
+  padding: 0.25rem 0.65rem;
+  background: #eff6ff;
+  color: #1d4ed8;
+  border-radius: 999px;
+  font-size: 0.8rem;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 1.5rem 1rem 2rem;
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+@media (max-width: 640px) {
+  .site-header {
+    padding: 2.5rem 0 2rem;
+  }
+
+  .site-main .container {
+    padding: 1.5rem 1.25rem 1.8rem;
+  }
+
+  .profile-meta span {
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  .profile-meta span + span {
+    margin-left: 0;
+  }
+}
